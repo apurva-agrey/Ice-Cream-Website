@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import ContactUs from './pages/ContactUs';
 import Menu from './pages/Menu';
 
+
 function App() {
   return (
     <div>
@@ -17,6 +18,7 @@ function App() {
           <Route path="/menu" element={<Menu/>}/>
           <Route path="/contact" element={<ContactUs/>}/>
           <Route path="*" element={<Home/>}/>
+
         </Routes>
         </BrowserRouter>
     </div>

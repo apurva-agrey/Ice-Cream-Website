@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import Person2Icon from '@mui/icons-material/Person2';
 import {
   AppBar,
   Box,
@@ -21,12 +22,9 @@ const Header = () => {
   };
 
 
-
-
-
   //menu drawer
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center"  }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Box sx={{ bgcolor: 'black' }}>
         <Typography
           color={"goldenrod"}
@@ -80,6 +78,7 @@ const Header = () => {
                 <li><NavLink to={"/menu"}>Menu</NavLink></li>
                 <li><NavLink to={"/about"}>About Us</NavLink></li>
                 <li><NavLink to={"/contact"}>Contact Us</NavLink></li>
+                {/* <li><NavLink to={"/login"}><Person2Icon /></NavLink></li> */}
               </ul>
             </Box>
           </Toolbar>
